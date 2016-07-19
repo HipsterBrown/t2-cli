@@ -706,7 +706,7 @@ exports['deployment.js.tarBundle'] = {
       compress: false,
       slim: true,
     }).then(bundle => {
-      extract(bundle, (error, entries) => {
+      extract(bundle, (error) => {
         if (error) {
           test.ok(false, error.toString());
           test.done();
